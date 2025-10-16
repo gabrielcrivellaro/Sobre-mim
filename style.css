@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+}
+
+h1 {
+    color: white;
+    border-bottom: 10px solid #ff0000;
+    padding-bottom: 10px;
+}
+
+p {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #007bff;
+}
