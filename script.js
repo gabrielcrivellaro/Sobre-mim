@@ -15,7 +15,7 @@ botao.addEventListener('click', function() {
         body.style.backgroundColor = '#1a1a1a';
         body.style.color = 'white';
         botao.textContent = '☀️ Modo Claro';
-        botao.style.background = '#00d4ff';
+        botao.style.background = '#ff6b6b';
         modoEscuro = true;
     }
 });
