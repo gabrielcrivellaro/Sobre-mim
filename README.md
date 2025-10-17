@@ -13,7 +13,7 @@ Estou em transição de carreira da área industrial para desenvolvimento de sof
 
 # 🔗 Ver online
 
-[Clique aqui para ver o projeto](https://gabrielcrivellaro.github.io/sobre-mim)
+[Clique aqui para ver o projeto](https://gabrielcrivellaro.github.io/Sobre-mim)
 
 ---
 
