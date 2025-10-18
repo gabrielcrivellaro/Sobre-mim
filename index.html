@@ -3,38 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha primeira página</title>
+    <title>Gabriel Crivellaro - Desenvolvedor em Transição</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">🏠 Home</a> |
-        <a href="sobre.html">👤 Sobre</a> |
-        <a href="contato.html">📧 Contato</a>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Gabriel Crivellaro</a>
+            <div class="nav-links">
+                <a href="index.html">🏠 Home</a>
+                <a href="sobre.html">👤 Sobre</a>
+                <a href="projetos.html">💻 Projetos</a>
+                <a href="contato.html">📧 Contato</a>
+            </div>
+        </div>
     </nav>
 
-    <h1>Olá Mundo!</h1>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="avatar-container">
+                <!-- Avatar placeholder -->
+                 <img src="https://ui-avatars.com/api/?name=Gabriel+Crivellaro&size=200&background=00d4ff&color=1a1a1a&bold=true"
+                alt="Gabriel Crivellaro"
+                class="avatar">
+            </div>
+            <h1 class="hero-title">Olá, eu sou Gabriel Crivellaro! 👋</h1>
+            <p class="hero-subtitle">
+                Technical em transição para Desenvolvedor de Software
+            </p>
+            <div class="hero-tags">
+                <span class="tag">🔧 12 anos em Indústria</span>
+                <span class="tag">🌍 Experiência Internacional</span>
+                <span class="tag">💻 Engenharia de Software</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+                <a href="sobre.html" class="btn btn-secondary">Conheça Minha História</a>
+            </div>
+        </div>
+    </header>
 
-    <p>Meu nome é Gabriel Crivellaro, tenho 27 anos. <br>
-    Ingressei no SENAI com o curso de Mecânico de Usinagem e na primeira semana fui empregado para trabalhar na cerâmica Nardini Pisos e Revestimentos. <br>
-    No período da manhã eu ficava no curso, a tarde entrava no estágio e noite terminava o ensino médio. <br>
-    Após 2 anos encerrei meu curso e meu estágio, me efetivaram na Nardini como ajudante de manutenção e fiquei por mais 2 anos. <br>
-    Iniciei a faculdade de Engenharia Mecânica mas depois de 1 ano e meio tranquei por falta de verba da minha parte. <br>
-    Fui convidado a fazer parte da equipe de manutenção da cerâmica Delta porcelanatos e aceitei com muito prazer. <br>
-    Na Delta comecei como Meio oficial e fui crescendo dentro da empresa, Mecânico de Manutenção e depois Mecânico Sênior. <br>
-    Trabalhei por quase 6 anos na empresa, e nesse tempo eu iniciei o curso de Técnico em Mecânica no Bayeux, mas por horário de trabalho e para atender a empresa eu tranquei faltando 6 meses para terminar. <br>
-    Recebi o convite para fazer parte da equipe de assistência técnica na System Ceramics e precisava entender um pouco de elétrica, eu tinha começado um curso de Mecatrônica no EDUQ fazia quase 1 ano, então aceitei o convite e começei a trabalhar na System. <br>
-    Na System entrei como técnico de máquinas de classificação e faço montagens de máquinas(elétrica e mecânica), assistências, capacitações e startup. <br>
-    As assistências tem presenciais e remotas, já viajei pela empresa a trabalho para lugares como Colômbia, Peru, Argentina e sempre ajudando. <br>
-    Sou curioso e sempre gosto de aprender mais sobre máquinas, sempre faço pequenos cursos para sempre estar aprendendo e agora resolvi entrar em um desafio ainda maior. <br>
-    Comecei a faculdade de Engenharia de Software na Uninter, estou fazendo online por conta das viagens a trabalho. <br>
-    Hoje procuro um cargo para ingressar nessa área que estou gostando tanto, seja um estágio que eu consiga encaixar junto com o meu trabalho ou até um trabalho como junior. <br> 
+    <section class="sobre-resumo">
+        <h2>🚀 Minha Jornada</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">🎓</div>
+                <div class="timeline-content">
+                    <h3>2013 - Início no SENAI</h3>
+                    <p>Mecânico de Usinagem e primeiro estágio na Nardini pisos e revestimentos LTDA</p>
+                </div>
+            </div>
 
-    <button id="modoEscuro">🌙 Modo Escuro</button>
+            <div class="timeline-item">
+                <div class="timeline-icon">⚙️</div>
+                <div class="timeline-content">
+                    <h3>2014 - Delta Porcelanatos</h3>
+                    <p>5 anos de evolução: Meio Oficial → Mecânico Sênior</p>
+                </div>
+            </div>
 
-    <div>
-        <p>👀 Você visitou esta página <strong id="contador">0</strong> vezes</p>
-    </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🌍</div>
+                <div class="timeline-content">
+                    <h3>2022 - System Ceramics</h3>
+                    <p>Assistência técnica internacional (Colômbia, Peru, Argentina)</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">💻</div>
+                <div class="timeline-content">
+                    <h3>2025 - Transição para Dev</h3>
+                    <p>Engenharia de Software na Uninter + projetos pessoais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <div class="stat-number">12+</div>
+            <div class="stat-label">Anos de Experiência</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Países Trabalhados</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Empresas</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="contador">0</div>
+            <div class="stat-label">Visitas ao Site</div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Pronto para o Próximo Desafio</h2>
+        <p>Procuro oportunidades como Desenvolvedor Júnior ou Estágio</p>
+        <a href="contato.html" class="btn btn-large">Vamos Conversar! 💬</a>
+    </section>
+
+    <button id="modoEscuro" class="theme-toggle">🌙</button>
+
     <script src="./script.js"></script>
 </body>
 </html>

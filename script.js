@@ -40,7 +40,7 @@ function ativarModoEscuro() {
     body.style.color = 'white';
     
     if (botao) {
-        botao.textContent = '☀️ Modo Claro';
+        botao.textContent = '☀️ ';
         botao.style.background = '#ff6b6b';
     }
     
@@ -53,7 +53,7 @@ function ativarModoClaro() {
     body.style.color = 'black';
     
     if (botao) {
-        botao.textContent = '🌙 Modo Escuro';
+        botao.textContent = '🌙 ';
         botao.style.background = '#00d4ff';
     }
     
