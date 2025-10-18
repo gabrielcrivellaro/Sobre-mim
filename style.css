@@ -66,3 +66,136 @@ button {
     font-size: 16px;
     font-weight: bold;
 }
+
+/* ========== FORMULÁRIO DE CONTATO ========== */
+.container-contato {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.form-contato {
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid #00d4ff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00d4ff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00d4ff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #00d4ff, #0099cc);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+.mensagem-sucesso {
+    background: #2ecc71;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    animation: surgir 0.5s;
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== REDES SOCIAIS ========== */
+.redes-sociais {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background: #2a2a2a;
+    border-radius: 10px;
+}
+
+.redes-sociais h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 12px 25px;
+    background: #3a3a3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.social-btn:hover {
+    background: #00d4ff;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Gabriel Crivellaro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">🏠 Home</a> |
+        <a href="sobre.html">👤 Sobre</a> |
+        <a href="contato.html">📧 Contato</a>
+    </nav>
+    
+    <h1>Entre em Contato</h1>
+
+    <p style="text-align: center; font-size: 18px;">
+        Interessado em conversar sobre oportunidades ou projetos? <br>
+        Preencha o formulário abaixo ou me encontre nas redes!
+    </p>
+
+    <div class="container-contato">
+        <form id="formularioContato" class="form-contato">
+            <div class="form-group">
+                <label for="nome">📝 Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">📧 Email</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="assunto">💼 Assunto</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione...</option>
+                    <option value="oportunidade">Oportunidade de Trabalho</option>
+                    <option value="projeto">Proposta de Projeto</option>
+                    <option value="duvida">Dúvida Técnica</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">💬 Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">
+                Enviar Mensagem 🚀
+            </button>
+        </form>
+
+        <div id="mensagemSucesso" class="mensagem-sucesso" style="display: none;">
+            ✅ Mensagem enviada com sucesso! <br>
+            Entrarei em contato em breve.
+        </div>
+    </div>
+
+    <div class="redes-sociais">
+        <h2>Ou me encontre aqui:</h2>
+        <div class="social-links">
+            <a href="https://github.com/gabrielcrivellaro" target="_blank" class="social-btn">
+                💻 GitHub
+            </a>
+            <a href="https://linkedin.com/in/gabriel-crivellaro-5716231b5" target="_blank" class="social-btn">
+                💼 LinkedIn
+            </a>
+            <a href="gabrielcrivellaro1998@gmail.com" class="social-btn">
+                📧 Email
+            </a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

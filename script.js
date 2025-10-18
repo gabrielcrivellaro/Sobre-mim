@@ -77,3 +77,44 @@ if (contadorElemento) {
     // Mostra na página
     contadorElemento.textContent = visitas;
 }
+
+// ========== FORMULÁRIO DE CONTATO ==========
+const formulario = document.getElementById('formularioContato');
+
+if (formulario) {
+    formulario.addEventListener('submit', function(evento) {
+        evento.preventDefault(); //Impede o envio tradicional
+
+        //Pega os valores dos campos
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const assunto = document.getElementById('assunto').value;
+        const mensagem = document.getElementById('mensagem').value;
+
+        //Salva no localStorage (simulação - depois integração com backend)
+        const contato = {
+            nome: nome,
+            email: email,
+            assunto: assunto,
+            mensagem: mensagem,
+            data: new Date().toLocaleString('pt-BR')
+        };
+
+        //Salva (em produção real, isso iria para um servidor)
+        localStorage.setItem('ultimoContato', JSON.stringify(contato));
+
+        //Mostra mensagem de sucesso
+        formulario.style.display = 'none';
+        document.getElementById('mensagemSucesso').style.display = 'block';
+
+        //Log no console (para ver que funcionou)
+        console.log('📧 Contato recebido', contato);
+
+        //Reseta após 3 segundos
+        setTimeout(() => {
+            formulario.requestFullscreen();
+            formulario.style.display = 'block';
+            document.getElementById('mensagemSucesso').style.display = 'none';
+        }, 3000);
+    })
+}
