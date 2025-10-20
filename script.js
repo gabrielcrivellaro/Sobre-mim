@@ -18,7 +18,7 @@ const botao = document.getElementById('modoEscuro');
 if (botao) {
     // Atualiza o texto do botão baseado no tema atual
     if (temaSalvo === 'escuro') {
-        botao.textContent = '☀️ Modo Claro';
+        botao.textContent = '☀️';
         botao.style.background = '#ff6b6b';
     }
 
