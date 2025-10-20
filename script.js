@@ -131,9 +131,66 @@ if (btnToggle && secaoHabilidades) {
 
         //Muda o texto do botão
         if (secaoHabilidades.classList.contains('escondido')) {
-            btnToggle.textContent = '👁️ Mostrar Habilidades';
+            btnToggle.textContent = '🤓 Mostrar Habilidades';
         } else {
-            btnToggle.textContent = '👁️ Esconder Habilidades';
+            btnToggle.textContent = '🫣 Esconder Habilidades';
+        }
+    })
+}
+
+// ========== BOTÃO TOGGLE EXPERIÊNCIAS ==========
+const btnToggleExp = document.getElementById('btnToggleExperiencias');
+const secaoExperiencias = document.getElementById('secaoExperiencias');
+
+//Só executa se os elementos existirem (proteção)
+if (btnToggleExp && secaoExperiencias) {
+    btnToggleExp.addEventListener('click', function() {
+        //Toggle: adiciona/remove a classe "escondido"
+        secaoExperiencias.classList.toggle('escondido');
+
+        //Muda o texto do botão
+        if (secaoExperiencias.classList.contains('escondido')) {
+            btnToggleExp.textContent = '🤓 Mostrar Experiências';
+        } else {
+            btnToggleExp.textContent = '🫣 Esconder Experiências';
+        }
+    })
+}
+
+// ========== BOTÃO TOGGLE FORMAÇÕES ==========
+const btnToggleFormacao = document.getElementById('btnToggleFormacao');
+const secaoFormacao = document.getElementById('secaoFormacao');
+
+//Só executa se os elementos existirem (proteção)
+if (btnToggleFormacao && secaoFormacao) {
+    btnToggleFormacao.addEventListener('click', function() {
+        //Toggle: adiciona/remove a classe "escondido"
+        secaoFormacao.classList.toggle('escondido');
+
+        //Muda o texto do botão
+        if (secaoFormacao.classList.contains('escondido')) {
+            btnToggleFormacao.textContent = '🤓 Mostrar Formações';
+        } else {
+            btnToggleFormacao.textContent = '🫣 Esconder Formações';
+        }
+    })
+}
+
+// ========== BOTÃO TOGGLE IDIOMA ==========
+const btnToggleIdioma = document.getElementById('btnToggleIdioma');
+const secaoIdioma = document.getElementById('secaoIdioma');
+
+//Só executa se os elementos existirem (proteção)
+if (btnToggleIdioma && secaoIdioma) {
+    btnToggleIdioma.addEventListener('click', function() {
+        //Toggle: adiciona/remove a classe "escondido"
+        secaoIdioma.classList.toggle('escondido');
+
+        //Muda o texto do botão
+        if (secaoIdioma.classList.contains('escondido')) {
+            btnToggleIdioma.textContent = '🤓 Mostrar Idiomas';
+        } else {
+            btnToggleIdioma.textContent = '🫣 Esconder Idiomas';
         }
     })
 }

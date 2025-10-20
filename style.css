@@ -931,3 +931,42 @@ section {
     margin: 0;
     padding: 0;
 }
+
+/* Animação suave ao esconder/mostrar */
+#secaoExperiencias {
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+#secaoExperiencias.escondido {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animação suave ao esconder/mostrar */
+#secaoFormacao {
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+#secaoFormacao.escondido {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animação suave ao esconder/mostrar */
+#secaoIdioma {
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+#secaoIdioma.escondido {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
