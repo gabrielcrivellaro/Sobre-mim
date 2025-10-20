@@ -19,7 +19,7 @@ if (botao) {
     // Atualiza o texto do botão baseado no tema atual
     if (temaSalvo === 'escuro') {
         botao.textContent = '☀️';
-        botao.style.background = '#ff6b6b';
+        botao.style.background = '#00d4ff';
     }
 
     // Quando clicar no botão
@@ -40,8 +40,8 @@ function ativarModoEscuro() {
     body.style.color = 'white';
     
     if (botao) {
-        botao.textContent = '☀️ ';
-        botao.style.background = '#ff6b6b';
+        botao.textContent = '☀️';
+        botao.style.background = '#00d4ff';
     }
     
     localStorage.setItem('tema', 'escuro');
@@ -50,7 +50,7 @@ function ativarModoEscuro() {
 // Função que ativa o modo claro
 function ativarModoClaro() {
     body.style.backgroundColor = '#f4f4f4';
-    body.style.color = 'black';
+    body.style.color = 'white';
     
     if (botao) {
         botao.textContent = '🌙 ';
@@ -116,5 +116,24 @@ if (formulario) {
             formulario.style.display = 'block';
             document.getElementById('mensagemSucesso').style.display = 'none';
         }, 3000);
+    })
+}
+
+// ========== BOTÃO TOGGLE HABILIDADES ==========
+const btnToggle = document.getElementById('btnToggleHabilidades');
+const secaoHabilidades = document.getElementById('secaoHabilidades');
+
+//Só executa se os elementos existirem (proteção)
+if (btnToggle && secaoHabilidades) {
+    btnToggle.addEventListener('click', function() {
+        //Toggle: adiciona/remove a classe "escondido"
+        secaoHabilidades.classList.toggle('escondido');
+
+        //Muda o texto do botão
+        if (secaoHabilidades.classList.contains('escondido')) {
+            btnToggle.textContent = '👁️ Mostrar Habilidades';
+        } else {
+            btnToggle.textContent = '👁️ Esconder Habilidades';
+        }
     })
 }

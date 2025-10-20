@@ -377,6 +377,7 @@ ul {
     border-radius: 10px;
     border-left: 4px solid var(--cor-primaria);
     margin: 20px 0;
+    color: white;
 }
 
 li {
@@ -422,6 +423,7 @@ p {
     padding: 30px;
     border-radius: 10px;
     border-left: 4px solid var(--cor-primaria);
+    color: white;
 }
 
 .form-group {
@@ -892,4 +894,40 @@ section {
     .projetos-header h1 {
         font-size: 32px;
     }
+}
+
+/* ========== BOTÃO TOGGLE ========== */
+.btn-toggle {
+    margin: 20px 0;
+    padding: 12px 25px;
+    background: var(--cor-primaria);
+    color: var(--fundo-escuro);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
+
+.btn-toggle:active {
+    transform: translateY(0);
+}
+
+/* Animação suave ao esconder/mostrar */
+#secaoHabilidades {
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+#secaoHabilidades.escondido {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
 }
